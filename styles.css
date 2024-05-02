@@ -25,3 +25,10 @@
 .contact-info {
   margin: 20px;
 }
+
+.name,
+.phone-number,
+.email,
+#story {
+  margin-top: 20px;
+}
