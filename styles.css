@@ -36,11 +36,11 @@
   margin-top: 10px;
 }
 
-.contact-info {
+#contact-info {
   margin: 20px;
 }
 
-.name,
+#name,
 .phone-number,
 .email,
 #story {

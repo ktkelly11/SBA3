@@ -11,8 +11,8 @@ const header = document.getElementsByClassName("header");
 const intro = document.getElementsByTagName("p");
 const donations = document.getElementById("donation-forms");
 const checkboxes = document.querySelector(".checkboxes");
-const contact = document.getElementsByClassName("contact-info");
-const name = document.getElementsByClassName("name");
+const contact = document.getElementById("contact-info");
+const moniker = document.getElementById("name");
 const number = document.getElementsByClassName("phone-number");
 const email = document.getElementsByClassName("email");
 
@@ -42,8 +42,51 @@ checkboxes.firstElementChild.textContent = "Bagpipes";
 //   });
 // }
 
-// third attempt
+// third attempt iterating over checkboxes w/ event listener and changing text color
 checkboxes.addEventListener("click", (evt) => {
   if (evt.target.checked === true) {
   }
 });
+
+// event listener and form validation for contact info
+// contact.addEventListener("submit", validate);
+
+// function validate(evt) {
+//   moniker = validateName();
+//   if (moniker === false) {
+//     evt = false;
+//     return false;
+//   }
+
+//   number = validatePhone();
+//   if (number === false) {
+//     evt = false;
+//     return false;
+//   }
+
+//   email = validateEmail();
+//   if (email === false) {
+//     evt = false;
+//     return false;
+//   }
+
+//   alert(`Thanks for your donation, ${moniker}`);
+
+//   return true;
+// }
+
+// Name validation
+// function validate() {
+//   if (moniker.value === "") {
+//     alert("Please provide a name");
+//     moniker.focus();
+//     return false;
+//   }
+//   return moniker.value;
+// }
+
+// Trying to change text of name
+// const changeText = moniker;
+// changeText.addEventListener("click", function () {
+//   changeText.textContent = "Your name here please!";
+// });
