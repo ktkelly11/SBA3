@@ -14,6 +14,8 @@ const checkboxes = document.querySelector(".checkboxes");
 const checkbox = document.getElementsByClassName("checkbox");
 const contact = document.getElementById("contact-info");
 const moniker = document.getElementById("name");
+const monikerPlaceholder = moniker.getAttributeNames("placeholder[3]");
+
 const number = document.getElementsByClassName("phone-number");
 const email = document.getElementsByClassName("email");
 
@@ -54,6 +56,7 @@ checkboxes.firstElementChild.textContent = "Bagpipes";
 //   }
 // });
 
+// Thanks for the help Constance
 for (let i = 0; i < checkbox.length; i++) {
   checkbox[i].addEventListener("click", (evt) => {
     if (evt.target.checked === true) {
@@ -62,6 +65,15 @@ for (let i = 0; i < checkbox.length; i++) {
     }
   });
 }
+
+// attempting to change the placeholder text of name
+// for (let i = 0; i < monikerPlaceholder.length; i++) {
+//   monikerPlaceholder[3].addEventListener("click", (evt) => {
+//     if (evt.taregt.click === true) {
+//       monikerPlaceholder[3].textContent = "Please enter your full name!";
+//     }
+//   });
+// }
 
 // event listener and form validation for contact info
 // contact.addEventListener("submit", validate);
