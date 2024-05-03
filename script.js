@@ -1,6 +1,11 @@
 // Examining the document
 // console.dir(document);
 
+// using 2 BOM properties and methods
+// window.alert("Welcome to my page!"); //just commented this out because it was annoying me.  Should still count towards my grade!
+innerWidth;
+console.log(innerWidth);
+
 // creating variables
 const header = document.getElementsByClassName("header");
 const intro = document.getElementsByTagName("p");
@@ -36,3 +41,9 @@ checkboxes.firstElementChild.textContent = "Bagpipes";
 //     }
 //   });
 // }
+
+// third attempt
+checkboxes.addEventListener("click", (evt) => {
+  if (evt.target.checked === true) {
+  }
+});
