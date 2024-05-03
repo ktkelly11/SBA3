@@ -14,7 +14,21 @@
   justify-content: space-around;
 }
 
-#checkbox {
+#banjo-checkbox,
+#cello-checkbox,
+#clarinet-checkbox,
+#drum-checkbox,
+#flute-checkbox,
+#guitar-checkbox,
+#harmonica-checkbox,
+#oboe-checkbox,
+#recorder-checkbox,
+#saxophone-checkbox,
+#tambourine-checkbox,
+#trumpet-checkbox,
+#violin-checkbox,
+#xylophone-checkbox,
+#other-checkbox {
   margin-top: 10px;
 }
 
