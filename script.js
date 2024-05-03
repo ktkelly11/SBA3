@@ -27,3 +27,12 @@ bagpipes.className = "bagpipes";
 
 // navigating between parent-child relationship
 checkboxes.firstElementChild.textContent = "Bagpipes";
+
+// second attempt iterating over checkboxes w/ event listener and changing text color
+// for (let i = 0; i < checkboxes.clientHeight; i++) {
+//   checkboxes[i].addEventListener("change", (evt) => {
+//     if (evt.target.checked) {
+//       checkboxes.input.style.color = "purple";
+//     }
+//   });
+// }
