@@ -2,7 +2,7 @@
 // console.dir(document);
 
 // using 2 BOM properties and methods
-// window.alert("Welcome to my page!"); //just commented this out because it was annoying me.  Should still count towards my grade!
+// window.alert("Welcome to the Secondhand Instrument Page!"); //just commented this out because it was annoying me.  Should still count towards my grade!
 innerWidth;
 console.log(innerWidth);
 
@@ -14,9 +14,9 @@ const checkboxes = document.querySelector(".checkboxes");
 const checkbox = document.getElementsByClassName("checkbox");
 const contact = document.getElementById("contact-info");
 const moniker = document.getElementById("name");
-const monikerPlaceholder = moniker.getAttributeNames("placeholder[3]");
-
+// console.log(moniker);
 const number = document.getElementsByClassName("phone-number");
+console.log(number);
 const email = document.getElementsByClassName("email");
 
 // creating new element using createElement
@@ -62,6 +62,7 @@ for (let i = 0; i < checkbox.length; i++) {
     if (evt.target.checked === true) {
       checkbox[i].style.color = "purple";
       console.log(checkbox[i]);
+      //   checkbox[i].innerHTML = "THANKS!!!";
     }
   });
 }
@@ -74,6 +75,14 @@ for (let i = 0; i < checkbox.length; i++) {
 //     }
 //   });
 // }
+
+// thanks.addEventListener("click", (evt) => {
+//   if (evt.target.click === true) {
+//     thanks.textContent = "We really appreciate it!";
+//   }
+// });
+
+const button = document.getElementById("button");
 
 // event listener and form validation for contact info
 // contact.addEventListener("submit", validate);
@@ -126,3 +135,19 @@ for (let i = 0; i < checkbox.length; i++) {
 //     namePlaceholder.style.textContent = "Please enter your name";
 //   }
 // });
+
+// Validate phone number
+// const validateNumber = (number) => {
+//     const reg = ^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$;
+//     return reg.toLocaleString(number)
+// }
+// console.log(validateNumber)
+
+// second event listener to change h2 text content
+button.addEventListener("click", buttonClick);
+
+function buttonClick(evt) {
+  console.log(evt.target);
+  document.getElementById("thanks").textContent =
+    "We appreciate your donation!";
+}
