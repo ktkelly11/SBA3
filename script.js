@@ -15,3 +15,12 @@ const email = document.getElementsByClassName("email");
 const bagpipes = document.createElement("label");
 // using prepend to add new element to checboxes div
 checkboxes.prepend(bagpipes);
+// adding class to new label
+bagpipes.className = "bagpipes";
+
+// iterating over checkboxes and changing color
+// checkboxes.addEventListener("change", function () {
+//   if (checkboxes.checked) {
+//     document.checkboxes.input.style.color = "purple";
+//   }
+// });
