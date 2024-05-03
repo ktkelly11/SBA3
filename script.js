@@ -3,7 +3,6 @@
 
 const header = document.getElementsByClassName("header");
 const intro = document.getElementsByTagName("p");
-console.log(intro);
 const donations = document.getElementById("donation-forms");
 const checkboxes = document.querySelector(".checkboxes");
 const contact = document.getElementsByClassName("contact-info");
