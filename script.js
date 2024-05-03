@@ -18,9 +18,12 @@ checkboxes.prepend(bagpipes);
 // adding class to new label
 bagpipes.className = "bagpipes";
 
-// iterating over checkboxes and changing color
+// iterating over checkboxes and changing color attempt
 // checkboxes.addEventListener("change", function () {
 //   if (checkboxes.checked) {
 //     document.checkboxes.input.style.color = "purple";
 //   }
 // });
+
+// navigating between parent-child relationship
+checkboxes.firstElementChild.textContent = "Bagpipes";
