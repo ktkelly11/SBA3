@@ -1,8 +1,7 @@
 // Examining the document
 // console.dir(document);
 
-// using 2 BOM properties and methods
-// window.alert("Welcome to the Secondhand Instrument Page!"); //just commented this out because it was annoying me.  Should still count towards my grade!
+// first BOM property/method
 innerWidth;
 console.log(innerWidth);
 
@@ -14,9 +13,7 @@ const checkboxes = document.querySelector(".checkboxes");
 const checkbox = document.getElementsByClassName("checkbox");
 const contact = document.getElementById("contact-info");
 const moniker = document.getElementById("name");
-// console.log(moniker);
 const number = document.getElementsByClassName("phone-number");
-console.log(number);
 const email = document.getElementsByClassName("email");
 
 // creating new element using createElement
@@ -28,7 +25,7 @@ bagpipes.className = "bagpipes";
 // navigating between parent-child relationship
 checkboxes.firstElementChild.textContent = "Bagpipes";
 
-// iterating over checkboxes and changing color attempt
+// iterating over checkboxes and changing color attempt 1
 // checkbox.addEventListener("change", function () {
 //   if (checkboxes.checked) {
 //     document.checkboxes.input.style.color = "purple";
@@ -44,7 +41,7 @@ checkboxes.firstElementChild.textContent = "Bagpipes";
 //   });
 // }
 
-// third attempt iterating over checkboxes w/ event listener and changing text color
+// third attempt iterating over checkboxes w/ event listener and changing text color with Constance's help
 // let i = 0;
 // checkbox[i].addEventListener("click", (evt) => {
 //   //   if (evt.target.checked === true) {
@@ -56,7 +53,7 @@ checkboxes.firstElementChild.textContent = "Bagpipes";
 //   }
 // });
 
-// Thanks for the help Constance
+// Final attempt - event listener 1, iterates over the checkboxes, and modifies the style and at least one attribute
 for (let i = 0; i < checkbox.length; i++) {
   checkbox[i].addEventListener("click", (evt) => {
     if (evt.target.checked === true) {
@@ -143,13 +140,13 @@ const button = document.getElementById("button");
 // }
 // console.log(validateNumber)
 
-// second event listener to change h2 text content
+// Second event listener that checks form validation and modifies the text content
 button.addEventListener("click", buttonClick);
 
 function buttonClick(evt) {
   // Form validation
   if (moniker.value === "") {
-    alert("Name must be filled out!");
+    alert("Name must be filled out!"); //second BOM property/method
     moniker.focus;
     return false;
   }
@@ -168,3 +165,8 @@ function buttonClick(evt) {
 //   }
 //   return number.value;
 // }
+
+// Using clone node to clone the first checkbox index
+const banjoItem = checkbox[0];
+const banjoCopy = banjoItem.cloneNode(true);
+console.log(banjoCopy);
