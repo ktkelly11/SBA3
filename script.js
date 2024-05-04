@@ -138,7 +138,7 @@ const button = document.getElementById("button");
 
 // Validate phone number
 // const validateNumber = (number) => {
-//     const reg = ^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$;
+//     const reg = /^(\+\d{1,2}\s?)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$;
 //     return reg.toLocaleString(number)
 // }
 // console.log(validateNumber)
@@ -150,4 +150,20 @@ function buttonClick(evt) {
   console.log(evt.target);
   document.getElementById("thanks").textContent =
     "We appreciate your donation!";
+
+  //   if (number.value === "") {
+  //     alert("Phone number must be filled out");
+  //     number.focus;
+  //     return false;
+  //   }
 }
+
+// Form validation
+// function validatePhone() {
+//   if (number.value === "") {
+//     alert("Phone number must be filled out");
+//     number.focus();
+//     return false;
+//   }
+//   return number.value;
+// }
