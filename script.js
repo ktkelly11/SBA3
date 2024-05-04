@@ -171,4 +171,4 @@ const banjoItem = checkbox[0];
 const banjoCopy = banjoItem.cloneNode(true);
 console.log(banjoCopy);
 
-// I am all done and I think that should be everyone of the requirements!
+// I am all done and I think that should be every one of the requirements!
