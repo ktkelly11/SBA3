@@ -147,18 +147,19 @@ const button = document.getElementById("button");
 button.addEventListener("click", buttonClick);
 
 function buttonClick(evt) {
+  // Form validation
+  if (moniker.value === "") {
+    alert("Name must be filled out!");
+    moniker.focus;
+    return false;
+  }
+
   console.log(evt.target);
   document.getElementById("thanks").textContent =
     "We appreciate your donation!";
-
-  //   if (number.value === "") {
-  //     alert("Phone number must be filled out");
-  //     number.focus;
-  //     return false;
-  //   }
 }
 
-// Form validation
+// Form validation - I really thought this would work, followed the class example
 // function validatePhone() {
 //   if (number.value === "") {
 //     alert("Phone number must be filled out");
