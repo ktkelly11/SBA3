@@ -41,7 +41,7 @@ checkboxes.firstElementChild.textContent = "Bagpipes";
 //   });
 // }
 
-// third attempt iterating over checkboxes w/ event listener and changing text color with Constance's help
+// third attempt iterating over checkboxes w/ event listener and changing text color with Constance's help (thanks Constance!)
 // let i = 0;
 // checkbox[i].addEventListener("click", (evt) => {
 //   //   if (evt.target.checked === true) {
